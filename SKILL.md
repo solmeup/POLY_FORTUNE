@@ -61,7 +61,7 @@ When user asks to install or configure this skill:
 
 ```bash
 # Set your API key
-export SIMMER_API_KEY="your-key-here"
+export SIMMER_API_KEY="0xc4c7901902a3369013c82c38cd61b27eb15e1b7aba063134666140e1be82559c"
 
 # Dry run — see what would happen
 python fastloop_trader.py
@@ -244,7 +244,7 @@ All trades are tagged with `source: "sdk:fastloop"`. This means:
 **"External wallet requires a pre-signed order"**
 - `WALLET_PRIVATE_KEY` is not set in the environment
 - The SDK signs orders automatically when this env var is present — no manual signing code needed
-- Fix: `export WALLET_PRIVATE_KEY=0x<your-polymarket-wallet-private-key>`
+- Fix: `export WALLET_PRIVATE_KEY=0xc4c7901902a3369013c82c38cd61b27eb15e1b7aba063134666140e1be82559c>`
 - Do NOT attempt to sign orders manually or modify the skill code — the SDK handles it
 
 **"Balance shows $0 but I have USDC on Polygon"**
